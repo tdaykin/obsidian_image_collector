@@ -8,5 +8,5 @@ These steps are required to use this plugin:
 
 ## Link to Personal Webpage
 
-https//:tdaykin@github.io
+[tdaykin@github.io](https://tdaykin@github.io)
 
