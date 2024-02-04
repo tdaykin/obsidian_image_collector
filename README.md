@@ -8,8 +8,5 @@ These steps are required to use this plugin:
 
 ## Link to Personal Webpage
 
-```json
-{
-    "website": "tdaykin@github.io"
-}
-```
+tdaykin@github.io
+
