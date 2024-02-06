@@ -21,10 +21,10 @@ class ImageCollectorSettingTab extends PluginSettingTab {
 
         containerEl.empty();
 
-        containerEl.createEl('h2', {text: 'Image Collector Settings'});
+        containerEl.createEl('h2', {text: 'Image Collector'});
 
         new Setting(containerEl)
-            .setName('Image Folder Path')
+            .setName('Image folder path')
             .setDesc('The folder where images are stored')
             .addText(text => text
                 .setPlaceholder('Enter your image folder path')
@@ -45,7 +45,7 @@ export default class ImageCollectorPlugin extends Plugin {
 		// Register a command that can be called via the command palette
 		// This command will operate on the currently active file
 		this.addCommand({
-			id: 'export-markdown-images-command',
+			id: 'export-markdown-images',
 			name: 'Export Markdown Images',
 			callback: () => {
 				// Obtain the current active file
@@ -68,7 +68,7 @@ export default class ImageCollectorPlugin extends Plugin {
 			// Ensure the file is a Markdown file before adding the menu item
 			if (file instanceof TFile && file.extension === 'md') {
 				menu.addItem((item) => {
-					item.setTitle("Export Images with My Plugin")
+					item.setTitle("Export images")
 						.setIcon("document-export")
 						.onClick(() => {
 							// Execute the plugin's functionality for the selected file
