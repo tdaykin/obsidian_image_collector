@@ -10,11 +10,8 @@ I often find that I want to collect all images within a note whether it is for:
 This plugin offers a seamless experience rather than having to either find all of the images after you have made your note *or* beforehand create folders specific to each project to store images. You can now just run a command in the command palette to generate a folder that contains all of your note's images so you can drag into other project directories.
 
 ## How to use:
-These steps are required to use this plugin:
 
-1. In Obsidian go to Settings > Options > Files and links. Select the *default location for new attachments* to be **in the folder specified below**. Then choose a folder.
-2. In Settings, Community plugins > Image Collector > Image Folder Path *make sure the folder specified there* **is the same as step 1**
-3. While in note either `CTRL + P` to open terminal and run `Image Collector: Export Markdown Image` **or** right click on current open note and select `Export Images`
+While in note either `CTRL + P` to open command palette and run `Image Collector: Export markdown images` **or** right click on current open note and select `Export images`
 
 ## Link to Personal Webpage
 
