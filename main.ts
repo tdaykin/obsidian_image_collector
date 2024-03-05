@@ -1,4 +1,4 @@
-import { App, Editor, MarkdownView, TFile, Modal, Notice, Plugin } from 'obsidian';
+import { App, Editor, MarkdownView, TFile, Modal, Notice, Plugin} from 'obsidian';
 
 export default class ImageCollectorPlugin extends Plugin {
     async onload() {
@@ -38,13 +38,17 @@ export default class ImageCollectorPlugin extends Plugin {
 
     async exportMarkdownImages(file: TFile) {
         const fileContent = await this.app.vault.read(file);
-        const imageRegex = /!\[\[?(.*?)\]?\]/g;
+        const imageRegex = /!\[\[(.*?)\]\]|!\[(?:.*?)\]\((.*?)\s*(".*?")?\)/g;
         let match;
         const images = [];
 
         while ((match = imageRegex.exec(fileContent)) !== null) {
-            const imagePath = match[1].includes('|') ? match[1].split('|')[0] : match[1];
-            images.push(imagePath);
+            let imagePath = match[1] || match[2];
+            if (imagePath) {
+                // Decode URL-encoded parts of the image path
+                imagePath = decodeURIComponent(imagePath.trim());
+                images.push(imagePath);
+            }
         }
 
         if (images.length === 0) {
