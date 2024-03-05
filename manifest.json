@@ -1,7 +1,7 @@
 {
 	"id": "image_collector",
 	"name": "Image Collector",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"minAppVersion": "0.15.0",
 	"description": "Collects all of the images in an Obsidian (markdown) note and exports them to a folder called 'file_name images'.",
 	"author": "tdaykin",
