@@ -1,5 +1,3 @@
-# Image Collector Plugin
-
 ## How to use:
 
 While in note either `CTRL + P` to open command palette and run `Image Collector: Export markdown images` **or** right click on current open note and select `Export images`
