@@ -3,7 +3,7 @@
 	"name": "Image Collector",
 	"version": "1.0.2",
 	"minAppVersion": "0.15.0",
-	"description": "Collects all images from your note and saves them to a new folder.",
+	"description": "Collects all images from your note and saves them to a new folder called \"file_name images\".",
 	"author": "tdaykin",
 	"authorUrl": "tdaykin.github.io",
 	"isDesktopOnly": false
