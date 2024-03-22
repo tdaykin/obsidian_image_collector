@@ -38,15 +38,17 @@ export default class ImageCollectorPlugin extends Plugin {
 
     async exportMarkdownImages(file: TFile) {
         const fileContent = await this.app.vault.read(file);
-        const imageRegex = /!\[\[(.*?)\]\]|!\[(?:.*?)\]\((.*?)\s*(".*?")?\)/g;
+        const imageRegex = /!\[\[(.*?)\]\]|!\[(.*?)\]\((.*?)(?:\|.*?)?\)/g;
         let match;
         const images = [];
 
         while ((match = imageRegex.exec(fileContent)) !== null) {
-            let imagePath = match[1] || match[2];
+            let imagePath = match[1] || match[3];
             if (imagePath) {
-                // Decode URL-encoded parts of the image path
                 imagePath = decodeURIComponent(imagePath.trim());
+                if (imagePath.includes('|')) {
+                    imagePath = imagePath.split('|')[0];
+                }
                 images.push(imagePath);
             }
         }
