@@ -13,3 +13,10 @@ I often find that I want to collect all images within a note, whether it is for:
 
 [tdaykin.github.io](https://tdaykin.github.io)
 
+## Support
+
+If you like this plugin and would like to buy me a coffee, you can!
+
+[<img src="https://cdn.buymeacoffee.com/buttons/v2/default-violet.png" alt="BuyMeACoffee" width="100">](https://www.buymeacoffee.com/tdaykin)
+
+
