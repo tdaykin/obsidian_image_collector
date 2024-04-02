@@ -6,5 +6,6 @@
 	"description": "Collects all images from your note and saves them to a new folder called \"file_name images\".",
 	"author": "tdaykin",
 	"authorUrl": "tdaykin.github.io",
+	"fundingUrl": "https://www.buymeacoffee.com/tdaykin",
 	"isDesktopOnly": false
 }
