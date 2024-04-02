@@ -2,6 +2,8 @@
 
 While in note either `CTRL + P` to open command palette and run `Image Collector: Export markdown images` **or** right click on current open note and select `Export images`
 
+![Demo](/imagecollector 1.gif)
+
 ## Purpose:
 
 I often find that I want to collect all images within a note, whether it is for:
