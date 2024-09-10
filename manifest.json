@@ -1,6 +1,6 @@
 {
-	"id": "image_collector",
-	"name": "Image Collector",
+	"id": "image_scraper",
+	"name": "Image Scraper",
 	"version": "1.0.3",
 	"minAppVersion": "0.15.0",
 	"description": "Collects all images from your note and saves them to a new folder called \"file_name images\".",
